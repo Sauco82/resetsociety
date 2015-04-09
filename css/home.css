@@ -172,6 +172,7 @@
 .home__what__item {
   padding: 2rem;
   text-align: center;
+  width: 33%;
 }
 
 .home__what__item__copy {

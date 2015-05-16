@@ -1,6 +1,8 @@
 /*
 
   Color Theme:
+  -dark blue-
+  #4DC6E4
   -bright blue-
   #69D2E7;
 
@@ -62,7 +64,7 @@
   font-weight: 300;
   padding: 3rem 3rem 390px 3rem;
   margin: 0 auto;
-  text-shadow: 0 0 0.5rem rgba(54, 146, 175, 0.77),0.1rem 0.1rem 0.1rem rgba(54, 146, 175, 0.55);
+  text-shadow: 0 0 1.5rem rgba(32, 82, 98, 1),0.1rem 0.1rem 0.1rem rgba(54, 146, 175, 0.55);
   line-height: 120%;
 }
 
@@ -104,7 +106,7 @@
   }
 
 @media only screen and (min-width: 200px) and (orientation: portrait)  {
-  .home__intro__tagline { font-size: 1.5rem }
+  .home__intro__tagline { font-size: 2rem }
   .home__intro__cta { width: 100% }
 }
 
@@ -196,9 +198,11 @@
 
 @media only screen and (min-width: 200px) and (orientation: portrait)  {
   .home__what { flex-wrap: wrap; }
+  .home__what__item {width: 100%}
 }
 
 @media only screen and (min-width: 599px) and (orientation: portrait)  {
+  .home__what__item {width: 100%}
   .home__what__caption {float: left; margin: 0; max-width: 40% }
   .home__what__item__copy {text-align: left; margin-left: 50%}
 }
@@ -363,7 +367,8 @@
   display: flex;
   justify-content: center;
   color: white;
-  text-shadow: 0 0 0.5rem rgba(54, 146, 175, 0.77),0.1rem 0.1rem 0.1rem rgba(54, 146, 175, 0.55);
+  /*text-shadow: 0 0 0.5rem rgba(54, 146, 175, 0.77),0.1rem 0.1rem 0.1rem rgba(54, 146, 175, 0.55);*/
+  text-shadow: 0 0 1.5rem rgba(32, 82, 98, 1),0.1rem 0.1rem 0.1rem rgba(54, 146, 175, 0.55);
 }
 
 @media only screen and (max-width: 1000px) and (orientation: landscape){
@@ -476,12 +481,15 @@
   overflow: hidden;
   margin: 5rem auto 2rem auto;
   list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
+
 
 .home__join_us__apply__social__icon {
   float: left;
   font-size: 3rem;
-  margin-left: 1em;
 }
 
   .home__join_us__apply__social__icon a {
@@ -521,9 +529,7 @@
   .home__join_us__apply__actions,
   .home__join_us__apply__social,
   .home__join_us__apply__cta { width: 100% }
-  .home__join_us__apply__social { margin: 0 auto; padding: 0; display: flex; justify-content: space-around; }
-  .home__join_us__apply__social__icon {margin-left: 0.5rem}
-  .home__join_us__apply__social__icon:first-child { margin: 0; }
+  .home__join_us__apply__social { margin: 0 auto;}
 }
 
 /*  Footer  */

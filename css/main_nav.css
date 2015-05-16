@@ -24,9 +24,21 @@
   font-size: 1.1rem;
   line-height: 2rem;
 }
+  .main_nav__logo a,
+  .main_nav__item a {
+    color: #222;
+    text-decoration: none;
+    transition: .3s color;
+  }
+
+  .main_nav__logo a:hover,
+  .main_nav__item a:hover {
+    color:  #4DC6E4;
+  }
+
 
 @media only screen and (min-width: 320px) and (orientation: portrait) {
   .main_nav { height: auto; min-height: inherit; padding: 0 1rem; }
-  .main_nav__logo { margin: 1rem 0;}
-  .main_nav__list { display: none }
+  .main_nav__logo,
+  .main_nav__list { margin: 1rem 0;}
 }
